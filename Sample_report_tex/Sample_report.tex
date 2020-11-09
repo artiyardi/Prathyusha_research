@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage {graphicx}
+\usepackage{amsmath,amscd,amssymb,amsgen,amsfonts,amsbsy}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{cite}
+\usepackage[capitalise]{cleveref}
+
+% Adjust marjins
+\usepackage{pgf}
+\usepackage{indentfirst}
+\usepackage[left=25mm,top=15mm,right=25mm,bottom=15mm,foot=15mm]{geometry}
+
+\usepackage{soul}
+
+
+%=================================================================
+
+\title{Title of report}
+\author{Author name}
+\date{}
+
+%--------------------------------------
+\begin{document}
+
+\maketitle
+
+
+%--------------------------------------
+\section{Title of section}
+\label{Section_section_name_1}
+
+Write your text here
+
+%--------------------------------------
+\subsection{Title of subsection}
+\label{subSection_section_name_2}
+
+Write your text here
+
+Next is sample usage of frequently used terms.
+
+\begin{itemize}
+% 
+\item Item no 1
+\item Item no 2
+%  
+\end{itemize}
+
+
+\begin{enumerate}
+% 
+\item Numbered item 1
+\item Numbered item 2
+% 
+\end{enumerate}
+
+
+\begin{equation}
+%  
+x = y + z
+\label{Eqn_1}
+% 
+\end{equation}
+
+
+\begin{align}
+%  
+x_1 &= y_1 + z_1 \label{Eqn_2} \\
+% 
+x_2 &= y_2 + z_2
+% 
+\label{Eqn_3}
+% 
+\end{align}
+ 
+
+ 
+Refer section/subsection/equation as follows.\\
+\cref{Section_section_name_1} \\
+\cref{subSection_section_name_2} \\
+\cref{Eqn_1} \cref{Eqn_2} \cref{Eqn_3}
+
+
+\cite{Lin_Costello_Book, Maxell_Urbanke_2008, Yige_DG_ISIT_2006}
+% 
+
+
+
+%=========================================================
+
+\bibliographystyle{IEEEtran}
+\bibliography{Sample_bibliography}
+
+
+
+\end{document}
+
